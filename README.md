@@ -1,5 +1,5 @@
 # OpenCV-KhadasVIM3
-Script for OpenCV installation to Khadas VIM3Pro
+Script for OpenCV installation to Khadas VIM
 
 For installation just run install.sh
 ```shell
