@@ -13,32 +13,32 @@ echo $password | sudo -S apt-get install -y libneon27-dev
 echo $password | sudo -S apt-get install -y libneon27-gnutls-dev
 
 # Get Python source
-wget https://www.python.org/ftp/python/3.8.1/Python-3.8.1.tar.xz
-tar -xvf Python-3.8.1.tar.xz
-rm -rf Python-3.8.1.tar.xz
+#wget https://www.python.org/ftp/python/3.8.1/Python-3.8.1.tar.xz
+#tar -xvf Python-3.8.1.tar.xz
+#rm -rf Python-3.8.1.tar.xz
 
 # Configure
-./Python-3.8.1/configure --prefix=$root/python3.8 --enable-optimizations --without-ensurepip --enable-shared LDFLAGS="-Wl,-rpath /usr/lib/aarch64-linux-gnu/"
+#./Python-3.8.1/configure --prefix=$root/python3.8 --enable-optimizations --without-ensurepip --enable-shared LDFLAGS="-Wl,-rpath /usr/lib/aarch64-linux-gnu/"
 
 # Make
-make -j6
-echo $password | sudo -S make -j6 install
+#make -j6
+#echo $password | sudo -S make -j6 install
 
-cd $root
+#cd $root
 
 # Create environment
-$root/python3.8/bin/python3 -m venv $root/venv
+#$root/python3.8/bin/python3 -m venv $root/venv
 
 # Activate environment
-source $root/venv/bin/activate
+# source $root/venv/bin/activate
 
 pip3 install neon
 
 
 # Install numpy
-pip install numpy
+pip3 install numpy
 
-sleep 50000
+# sleep 50000
 
 # Downloading and unpacking opencv
 wget -O opencv.zip https://github.com/opencv/opencv/archive/3.4.8.zip
