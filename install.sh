@@ -17,6 +17,9 @@ echo $password | sudo -S apt autoremove
 # Install neon
 pip3 install neon
 
+# Install cython (for numpy)
+pip3 install cython
+
 # Install numpy
 pip3 install numpy
 
