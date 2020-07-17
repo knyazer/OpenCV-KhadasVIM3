@@ -10,7 +10,7 @@ export root="$(pwd)"
 echo $password | sudo -S apt install -y gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf g++ gcc cmake git
 
 # Install optimizations
-echo $password | sudo -S apt install -y build-essential cmake git pkg-config libavcodec-dev libtbb2 libtbb-dev libdc1394-22-dev protobuf-compiler libgflags-dev libgoogle-glog-dev libblas-dev libhdf5-serial-dev liblmdb-dev libleveldb-dev gfortran libsnappy-dev libprotobuf-dev libopenblas-dev libboost-dev libboost-all-dev libeigen3-dev libatlas-base-dev libne10-10 libne10-dev python3-pip libavformat-dev libswscale-dev libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev libpng-dev libjpeg-dev libopenexr-dev libtiff-dev libwebp-dev libneon27-dev libneon27-gnutls-dev libgtk2.0-dev libgtk-3-dev liblapacke-dev liblapack-dev python3-dev
+echo $password | sudo -S apt install -y build-essential libtbb2 libtbb-dev cmake git pkg-config libavcodec-dev libtbb2 libtbb-dev libdc1394-22-dev protobuf-compiler libgflags-dev libgoogle-glog-dev libblas-dev libhdf5-serial-dev liblmdb-dev libleveldb-dev gfortran libsnappy-dev libprotobuf-dev libopenblas-dev libboost-dev libboost-all-dev libeigen3-dev libatlas-base-dev libne10-10 libne10-dev python3-pip libavformat-dev libswscale-dev libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev libpng-dev libjpeg-dev libopenexr-dev libtiff-dev libwebp-dev libneon27-dev libneon27-gnutls-dev libgtk2.0-dev libgtk-3-dev liblapacke-dev liblapack-dev python3-dev
 
 echo $password | sudo -S apt autoremove
 
